@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>סדנת נחשון</title>
+	<link rel="stylesheet" href="website design.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="website.js"></script>
+</head>
+
+<body>
+	<div id = "constants">
+		<select onchange="changescreen()" id = "pageoptions" name="pages">
+			<option value="#home" id="op">בית</option>
+			<option value="#binarydict" id="op">הוספת מילון בינארי</option>
+			<option value="#encryptiondict" id="op">הוספת מילון הצפנה</option>
+			<option value="#sending" id="op">שליחה</option>
+			<option value="#riddle" id="op">חידה</option>
+		</select>
+	</div>
+
+	<div id = "home">
+		<h3>!ברוכים הבאים</h3>
+		<p> 
+			ברוכים הבאים לסדנה. בסדנה הזו תתנסו קצת עם הצפנות,
+			אפנונים ותוכלו לשלוח מידע לפי ההצפנות והאפנונים שהגדרתם. בנוסף, תוכלו להשמיע חידה (קובץ אודיו כלשהו) 
+			שבה תצטרכו לפענח את המילה שמסתתרת בתוך הקובץ 
+		</p>
+
+		<h3>מדריך למשתמש</h3>
+
+		<h2>הוספת מילון בינארי</h2>
+		<p> 
+			כדי להוסיף מילון בינארי, לכו לחלונית שנקראת
+			מילונים בינאריים והזינו שם מילון כאשר ליד כל
+			אות אתם כותבים רצף של חמישה מספרים שהם אפסים ואחדות
+			ולבסוף לחצו על הסימן פלוס
+			חשוב לציין שעליכם למלא את כל האותיות אחרת לא 
+			תוכלו לדעת לפרש מספרים לאותיות
+		</p>
+
+		<h2>הוספת מילון הצפנה</h2>
+		<p> 
+			כדי להוסיף מילון הצפנה לכו לחלונית שנקראת
+			מילוני הצפנה והזינו שם של מילון כאשר ליד כל אות אתם כותבים 
+			אות אחת שתחליף אותה במילון ולבסוף לחצו על הסימן פלוס
+		</p>
+
+		<h2>שליחת מידע</h2>
+		<p> 
+			כדי לשלוח מידע, לכו לחלונית שליחה ובחרו שיטת אפנון 
+			ומילונים מיד לאחר שאתם מזינים הודעה
+			לאחר מכן לחצו על החץ והשמיעו את המסר שלכם
+		</p>
+	</div>
+
+	<div id = "binarydict">
+		<h4>שלום</h4>
+		<input id="bits" type="text" name="aleph" placeholder="א" required>
+		<input id="bits" type="text" name="aleph" placeholder="ב" required>
+		<input id="bits" type="text" name="aleph" placeholder="ג" required>
+		<input id="bits" type="text" name="aleph" placeholder="ד" required>
+		<input id="bits" type="text" name="aleph" placeholder="ה" required>
+		<input id="bits" type="text" name="aleph" placeholder="ו" required>
+		<input id="bits" type="text" name="aleph" placeholder="ז" required>
+		<input id="bits" type="text" name="aleph" placeholder="ח" required>
+		<input id="bits" type="text" name="aleph" placeholder="ט" required>
+		<input id="bits" type="text" name="aleph" placeholder="י" required>
+		<input id="bits" type="text" name="aleph" placeholder="כ" required>
+		<input id="bits" type="text" name="aleph" placeholder="ל" required>
+		<input id="bits" type="text" name="aleph" placeholder="מ" required>
+		<input id="bits" type="text" name="aleph" placeholder="נ" required>
+		<input id="bits" type="text" name="aleph" placeholder="ס" required>
+		<input id="bits" type="text" name="aleph" placeholder="ע" required>
+		<input id="bits" type="text" name="aleph" placeholder="פ" required>
+		<input id="bits" type="text" name="aleph" placeholder="צ" required>
+		<input id="bits" type="text" name="aleph" placeholder="ק" required>
+		<input id="bits" type="text" name="aleph" placeholder="ר" required>
+		<input id="bits" type="text" name="aleph" placeholder="ש" required>
+		<input id="bits" type="text" name="aleph" placeholder="ת" required>
+
+		<button id="add" type="submit">+</button>
+	</div>
+
+	<div id = "encryptiondict">
+		<h4>שלום</h4>
+		<input id="letter" type="text" name="aleph" placeholder="א" required>
+		<input id="letter" type="text" name="aleph" placeholder="ב" required>
+		<input id="letter" type="text" name="aleph" placeholder="ג" required>
+		<input id="letter" type="text" name="aleph" placeholder="ד" required>
+		<input id="letter" type="text" name="aleph" placeholder="ה" required>
+		<input id="letter" type="text" name="aleph" placeholder="ו" required>
+		<input id="letter" type="text" name="aleph" placeholder="ז" required>
+		<input id="letter" type="text" name="aleph" placeholder="ח" required>
+		<input id="letter" type="text" name="aleph" placeholder="ט" required>
+		<input id="letter" type="text" name="aleph" placeholder="י" required>
+		<input id="letter" type="text" name="aleph" placeholder="כ" required>
+		<input id="letter" type="text" name="aleph" placeholder="ל" required>
+		<input id="letter" type="text" name="aleph" placeholder="מ" required>
+		<input id="letter" type="text" name="aleph" placeholder="נ" required>
+		<input id="letter" type="text" name="aleph" placeholder="ס" required>
+		<input id="letter" type="text" name="aleph" placeholder="ע" required>
+		<input id="letter" type="text" name="aleph" placeholder="פ" required>
+		<input id="letter" type="text" name="aleph" placeholder="צ" required>
+		<input id="letter" type="text" name="aleph" placeholder="ק" required>
+		<input id="letter" type="text" name="aleph" placeholder="ר" required>
+		<input id="letter" type="text" name="aleph" placeholder="ש" required>
+		<input id="letter" type="text" name="aleph" placeholder="ת" required>
+
+		<button id="add" type="submit">+</button>
+	</div>
+
+	<div id="sending">
+		<input type="text" id = "word" name="first-name" placeholder="הכנס מילה" required>
+
+		<button id="AM" type="submit">AM</button>
+		<button id="FM" type="submit">FM</button>
+		
+		<input type="range" name="frequency" min="1" max="100" value="50" class="slider" id="frequencychoice">
+
+		<button id="BY" type="submit">YB</button>
+		<button id="BD" type="submit">DB</button>
+		<button id="DY" type="submit">DE</button>
+		<button id="DD" type="submit">YE</button>
+		
+		<button id="play" type="submit">&#9658</button>
+		
+	</div>
+
+	<div id="riddle">
+		<input type="range" name="frequency" min="1" max="100" value="50" class="slider" id="frequencychoiceriddle">
+
+		<button id="playriddle" type="submit">&#9658</button>
+		
+	</div>
+</body>
+
+</html>
