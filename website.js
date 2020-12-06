@@ -34,7 +34,6 @@ function changescreen() {
     $("#sending").hide()
     $("#riddle").hide()
     $(todisplay).show()
-    window.alert("מפעיל שמע לפי ההצפנה הבאה")
 }
 
 function countInArray(array, what) {
