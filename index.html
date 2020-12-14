@@ -123,15 +123,16 @@
 		<button id="DY" type="submit">DE</button>
 		<button id="DD" type="submit">YE</button>
 		
-		<button id="play" type="submit" onclick="printdict()">&#9658</button>
+		<button id="play" type="submit" onclick="playAudio()">&#9658</button>
+		<button id="stop" type="submit" onclick="playAudio()">||</button>
 		
 	</div>
 
 	<div id="riddle">
 		<input type="range" name="frequency" min="1" max="100" value="50" class="slider" id="frequencychoiceriddle">
 
-		<button id="playriddle" type="submit">&#9658</button>
-		
+		<button id="playriddle" type="submit" onclick="playAudioRiddle()">&#9658</button>
+		<button id="stopriddle" type="submit" onclick="playAudioRiddle()" hidden>||</button>
 	</div>
 </body>
 
