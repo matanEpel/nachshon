@@ -1,5 +1,8 @@
 bindict = []
 encdict = []
+playing = false
+audio = new Audio('example.mp3');
+audio2 = new Audio('example.mp3');
 
 function notletter(val){
     if(val != "א" && val != "ב" && val != "ג" && 
@@ -22,11 +25,50 @@ function printdict(){
 }
 
 function main() {
-    // let x = 2
-    // document.write(x)
+    $("#home").hide()
+    $("#binarydict").hide()
+    $("#encryptiondict").hide()
+    $("#sending").hide()
+    $("#riddle").hide()
+    $("#stopriddle").hide()
+    $("#stop").hide()
+
+}
+
+function playAudio() {
+    if (playing){
+        $("#play").show()
+        $("#stop").hide()
+        audio.pause()
+        playing = false
+    }
+    else{
+        $("#stop").show()
+        $("#play").hide()
+        playing = true
+        audio.play();
+    }
+}
+
+function playAudioRiddle() {
+    if (playing){
+        $("#playriddle").show()
+        $("#stopriddle").hide()
+        audio2.pause()
+        playing = false
+    }
+    else{
+        $("#stopriddle").show()
+        $("#playriddle").hide()
+        playing = true
+        audio2.play();
+    }
 }
 
 function changescreen() {
+    audio.pause()
+    audio2.pause()
+    playing = false
     todisplay = document.getElementById("pageoptions").value;
     $("#home").hide()
     $("#binarydict").hide()
@@ -34,6 +76,10 @@ function changescreen() {
     $("#sending").hide()
     $("#riddle").hide()
     $(todisplay).show()
+    $("#playriddle").show()
+    $("#stopriddle").hide()
+    $("#play").show()
+    $("#stop").hide()
 }
 
 function countInArray(array, what) {

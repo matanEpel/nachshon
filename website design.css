@@ -110,6 +110,24 @@ textarea:focus, input:focus {
     left: 2%;
 }
 
+#stop {
+    display: none;
+    outline: none;
+    margin: auto;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 90pt;
+    padding: 5%;
+    padding-left: 7.8%;
+    padding-right: 7.8%;
+    background-color:   #3fad3f;;
+    position: fixed;
+    border: 10px solid #ffffff;
+    bottom: 1%;
+    left: 2%;
+}
+
 h3 {
     font-size: 90pt;
     text-align: center;
@@ -377,11 +395,29 @@ select::-ms-expand {
     height: 530px;
     width: 530px;
     border-radius: 50%;
+    top: 28%;
+    left: 23%;
+    margin-left: auto;
     font-size: 160pt;
     background-color:   #3fad3f;;
-    position: relative;
+    position: fixed;
     border: 10px solid #ffffff;
-    margin:auto;
-    margin-top: 50%;
-    display:block;
+}
+
+#stopriddle {
+    display: none;
+    outline: none;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 530px;
+    width: 530px;
+    border-radius: 50%;
+    top: 28%;
+    left: 23%;
+    margin-left: auto;
+    font-size: 160pt;
+    background-color:   #3fad3f;;
+    position: fixed;
+    border: 10px solid #ffffff;
 }
