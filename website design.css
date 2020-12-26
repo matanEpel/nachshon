@@ -21,8 +21,8 @@ body{
     display: block;
     margin: auto;
     text-align: center;
-    height: 170px;
-    width: 170px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
     border: 10px solid #ffffff;
@@ -35,16 +35,19 @@ body{
 
 #bits {
     outline: none;
-    display: block;
     margin: auto;
+    display: block;
     text-align: center;
     border-radius: 45pt;
+    height: 100px;
+    width: 350px;
     margin-top: 35px;
     border: 10px solid #ffffff;
     background-color: #be2b9f;
     color: #ffffff;
     font-size: 60pt;
     padding: 2%;
+    left: 100%;
     font-weight: bolder;
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 }
@@ -85,16 +88,16 @@ textarea:focus, input:focus {
     margin: auto;
     text-align: center;
     color: white;
-    border-radius: 20%;
+    border-radius: 50%;
     font-size: 150pt;
-    padding: 3%;
     background-color:   #3fad3f;;
     position: fixed;
     border: 10px solid #ffffff;
     bottom: 1%;
     left: 2%;
+    height:230px;
+    width: 230px;
 }
-
 
 h3 {
     font-size: 90pt;
