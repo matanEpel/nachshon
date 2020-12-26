@@ -5,8 +5,7 @@ am_l = [1]
 default_binary = [1]
 default_encryption = [1]
 playing = false
-audio = new Audio('example.mp3')
-audio2 = new Audio('example.mp3')
+audio2 = new Audio('riddle.mp3')
 audio4_1_a = new Audio("400-1-a.wav")
 audio5_1_a = new Audio("500-1-a.wav")
 audio6_1_a = new Audio("600-1-a.wav")
@@ -389,8 +388,6 @@ function playAudio() {
 }
 
 function playAudioRiddle() {
-    let freq = $('input[id=frequencychoiceriddle]').val()
-    let freq_zone = Math.trunc(freq/21)+1
     if (playing){
         $("#playriddle").show()
         $("#stopriddle").hide()
@@ -400,6 +397,7 @@ function playAudioRiddle() {
     else{
         $("#stopriddle").show()
         $("#playriddle").hide()
+        audio2.play()
         playing = true
     }
 }
