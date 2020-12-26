@@ -1,6 +1,9 @@
 bindict = []
 encdict = []
+defaultBicDict = ["00000", "00001", "00010", "00011", "00100", "00101", "00110", "00111", "01000", "01001", "01010", "01011", "01100", "01101", "01110", "01111", "10000", "10001", "10010", "10011", "10100", "10101"]
 am_l = [1]
+default_binary = [1]
+default_encryption = [1]
 playing = false
 audio = new Audio('example.mp3')
 audio2 = new Audio('example.mp3')
@@ -45,13 +48,15 @@ function notletter(val){
 }
 
 function toam(){
-    window.alert("changed to AM!")
-    am_l[0] = 1
+    $("#FM").show()
+    $("#AM").hide()
+    am_l[0] = 0
 }
 
 function tofm(){
-    window.alert("changed to FM!")
-    am_l[0] = 0
+    $("#AM").show()
+    $("#FM").hide()
+    am_l[0] = 1
 }
 
 function printdict(){
@@ -60,8 +65,33 @@ function printdict(){
     window.alert(encdict)
 }
 
+function toYourBinary(){
+    default_binary[0] = 0
+    $("#BY").show()
+    $("#BD").hide()
+}
+
+function toDefaultBinary(){
+    default_binary[0] = 1
+    $("#BD").show()
+    $("#BY").hide()
+}
+
+function toYourEnc(){
+    default_encryption[0] = 0
+    $("#DY").show()
+    $("#DD").hide()
+}
+
+function toDefaultEnc(){
+    default_encryption[0] = 1
+    $("#DD").show()
+    $("#DY").hide()
+}
+
 function main() {
-    window.alert(x)
+    $("#AM").show()
+    $("#FM").hide()
     $("#home").hide()
     $("#binarydict").hide()
     $("#encryptiondict").hide()
@@ -73,14 +103,28 @@ function main() {
 }
 
 function bits_from_location(loc){
-    final_data = []
-    for(let i = 0; i < bindict[loc].length; i++){
-        final_data.push(parseInt(bindict[loc][i]))
+    if(default_binary[0] == 0){
+        final_data = []
+        for(let i = 0; i < bindict[loc].length; i++){
+            final_data.push(parseInt(bindict[loc][i]))
+        }
+        return final_data
+    } else {
+        final_data = []
+        for(let i = 0; i < defaultBicDict[loc].length; i++){
+            final_data.push(parseInt(defaultBicDict[loc][i]))
+        }
+        return final_data
     }
-    return final_data
 }
 
 function to_enc_letter(letter){
+    if(default_encryption[0] == 1){
+        return letter
+    }
+    if(letter == " "){
+        return " "
+    }
     if("א" == letter){
         return encdict[0]
     }
@@ -150,6 +194,9 @@ function to_enc_letter(letter){
 }
 
 function to_bits(letter){
+    if(letter == " "){
+        return []
+    }
     letter = to_enc_letter(letter)
     if("א" == letter){
         return bits_from_location(0)
@@ -238,12 +285,6 @@ function playAudio() {
     let freq = $('input[id=frequencychoice]').val()
     let freq_zone = Math.trunc(freq/21)+1
 
-    if(bindict.length == 0 || encdict.length == 0){
-        window.alert("מנגן לפי הדיפולטיבי")
-    }
-    else{
-        window.alert("מנגן לפי המילונים שלך")
-    }
     word_bits = []
     let word = $('input[id=word]').val()
     for(let i = 0; i < word.length; i++){
@@ -252,7 +293,6 @@ function playAudio() {
 
     files_seq = []
     am = am_l[0]
-    window.alert(am)
     for(let h = 0; h < word_bits.length; h++){
         for(let j = 0; j < word_bits[h].length; j++){
             if(word_bits[h][j] == 0){
@@ -403,6 +443,7 @@ function not1and0(val){
 }
 
 function addBinDict() {
+    bindict = []
     if(document.querySelector('input[name=a1]').value != ""){
         bindict.push(document.querySelector('input[name=a1]').value)
     }
@@ -567,6 +608,7 @@ function addBinDict() {
 }
 
 function addEncDict() {
+    encdict = []
     if(document.querySelector('input[name=b1]').value != ""){
         encdict.push(document.querySelector('input[name=b1]').value)
     }

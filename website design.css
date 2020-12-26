@@ -95,38 +95,6 @@ textarea:focus, input:focus {
     left: 2%;
 }
 
-#play {
-    outline: none;
-    margin: auto;
-    text-align: center;
-    color: white;
-    border-radius: 50%;
-    font-size: 90pt;
-    padding: 5%;
-    background-color:   #3fad3f;;
-    position: fixed;
-    border: 10px solid #ffffff;
-    bottom: 1%;
-    left: 2%;
-}
-
-#stop {
-    display: none;
-    outline: none;
-    margin: auto;
-    text-align: center;
-    color: white;
-    border-radius: 50%;
-    font-size: 90pt;
-    padding: 5%;
-    padding-left: 7.8%;
-    padding-right: 7.8%;
-    background-color:   #3fad3f;;
-    position: fixed;
-    border: 10px solid #ffffff;
-    bottom: 1%;
-    left: 2%;
-}
 
 h3 {
     font-size: 90pt;
@@ -257,7 +225,7 @@ select::-ms-expand {
     position: fixed;
     border: 10px solid #ffffff;
     top: 30%;
-    right: 23%;
+    right: 36%;
 }
 
 #FM {
@@ -272,7 +240,7 @@ select::-ms-expand {
     position: fixed;
     border: 10px solid #ffffff;
     top: 30%;
-    left: 23%;
+    right: 36%;
 }
 
 #BY {
@@ -280,14 +248,14 @@ select::-ms-expand {
     margin: auto;
     text-align: center;
     color: white;
-    border-radius: 25%;
+    border-radius: 50px;
     font-size: 700%;
     padding: 3%;
     background-color:   #c3da44;
     position: fixed;
     border: 10px solid #ffffff;
     top: 46.5%;
-    left: 23%;
+    left: 20%;
 }
 
 #BD {
@@ -295,14 +263,14 @@ select::-ms-expand {
     margin: auto;
     text-align: center;
     color: white;
-    border-radius: 25%;
+    border-radius: 50px;
     font-size: 700%;
     padding: 3%;
     background-color:   #c3da44;
     position: fixed;
     border: 10px solid #ffffff;
     top: 46.5%;
-    right: 23%;
+    left: 10%;
 }
 
 #DY {
@@ -310,14 +278,14 @@ select::-ms-expand {
     margin: auto;
     text-align: center;
     color: white;
-    border-radius: 25%;
+    border-radius: 50px;
     font-size: 700%;
     padding: 3%;
     background-color:   #c3da44;
     position: fixed;
     border: 10px solid #ffffff;
     top: 63%;
-    left: 23%;
+    left: 20%;
 }
 
 #DD {
@@ -325,14 +293,14 @@ select::-ms-expand {
     margin: auto;
     text-align: center;
     color: white;
-    border-radius: 25%;
+    border-radius: 50px;
     font-size: 700%;
     padding: 3%;
     background-color:   #c3da44;
     position: fixed;
     border: 10px solid #ffffff;
     top: 63%;
-    right: 23%;
+    left: 10%;
 }
 
 #frequencychoice {
@@ -395,13 +363,49 @@ select::-ms-expand {
     height: 530px;
     width: 530px;
     border-radius: 50%;
-    top: 28%;
+    top: 35%;
     left: 23%;
     margin-left: auto;
     font-size: 160pt;
     background-color:   #3fad3f;;
     position: fixed;
     border: 10px solid #ffffff;
+}
+
+#play {
+    outline: none;
+    margin: auto;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 90pt;
+    padding: 5%;
+    background-color:   #3fad3f;;
+    position: fixed;
+    border: 10px solid #ffffff;
+    bottom: 1%;
+    left: 2%;
+    
+    height:260px;
+    width: 260px;
+}
+
+#stop {
+    outline: none;
+    margin: auto;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 90pt;
+    padding: 5%;
+    background-color:   #3fad3f;;
+    position: fixed;
+    border: 10px solid #ffffff;
+    bottom: 1%;
+    left: 2%;
+    
+    height:260px;
+    width: 260px;
 }
 
 #stopriddle {
@@ -413,7 +417,7 @@ select::-ms-expand {
     height: 530px;
     width: 530px;
     border-radius: 50%;
-    top: 28%;
+    top: 35%;
     left: 23%;
     margin-left: auto;
     font-size: 160pt;
