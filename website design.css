@@ -45,7 +45,7 @@ body{
 
 #bits::placeholder{
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    color: #ffffff;
+    color: #e996d0;
     font-size: 60pt;
 }
 
@@ -431,8 +431,8 @@ select::-ms-expand {
 
 #letter::placeholder{
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    color: #ffffff;
-    font-size: 40pt;
+    color: #e996d0;
+    font-size: 90pt;
 }
 
 #stop {
