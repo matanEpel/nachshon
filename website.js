@@ -403,9 +403,8 @@ function playAudioRiddle() {
 }
 
 function changescreen() {
-    audio.pause()
-    audio2.pause()
     playing = false
+    audio2.pause()
     todisplay = document.getElementById("pageoptions").value;
     $("#home").hide()
     $("#binarydict").hide()
