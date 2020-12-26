@@ -113,15 +113,15 @@
 	<div id="sending">
 		<input type="text" id = "word" name="first-name" placeholder="הכנס מילה" required>
 
-		<button id="AM" type="submit" onclick="toam()">AM</button>
 		<button id="FM" type="submit" onclick="tofm()">FM</button>
+		<button id="AM" type="submit" onclick="toam()">AM</button>
 		
 		<input type="range" name="frequency" min="1" max="100" value="50" class="slider" id="frequencychoice">
 
-		<button id="BY" type="submit">YB</button>
-		<button id="BD" type="submit">DB</button>
-		<button id="DY" type="submit">DE</button>
-		<button id="DD" type="submit">YE</button>
+		<button id="BY" type="submit" onclick="toDefaultBinary()">בינארי שלך</button>
+		<button id="BD" type="submit" onclick="toYourBinary()">בינארי דיפולטיבי</button>
+		<button id="DY" type="submit" onclick="toDefaultEnc()">הצפנה שלך</button>
+		<button id="DD" type="submit" onclick="toYourEnc()">הצפנה דיפולטיבי</button>
 		
 		<button id="play" type="submit" onclick="playAudio()">&#9658</button>
 		<button id="stop" type="submit" onclick="playAudio()">||</button>
@@ -129,7 +129,6 @@
 	</div>
 
 	<div id="riddle">
-		<input type="range" name="frequency" min="1" max="100" value="50" class="slider" id="frequencychoiceriddle">
 
 		<button id="playriddle" type="submit" onclick="playAudioRiddle()">&#9658</button>
 		<button id="stopriddle" type="submit" onclick="playAudioRiddle()" hidden>||</button>
