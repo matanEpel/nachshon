@@ -16,15 +16,13 @@ body{
     font-size: 100pt;
 }
 
-
-
 #bits {
     outline: none;
     margin: auto;
     display: block;
     text-align: center;
     border-radius: 45pt;
-    height: 150px;
+    height: 120px;
     width: 350px;
     margin-top: 35px;
     border: 10px solid #ffffff;
@@ -414,7 +412,7 @@ select::-ms-expand {
     border: 10px solid #ffffff;
     background-color: #be2b9f;
     color: #ffffff;
-    font-size: 80pt;
+    font-size: 90pt;
     font-weight: bolder;
     
     outline: none;
@@ -424,9 +422,17 @@ select::-ms-expand {
     border-radius: 50%;
     padding: 5%;
     border: 10px solid #ffffff;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    
     
     height:160px;
     width: 160px;
+}
+
+#letter::placeholder{
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    color: #ffffff;
+    font-size: 40pt;
 }
 
 #stop {
