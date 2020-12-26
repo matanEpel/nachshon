@@ -74,22 +74,6 @@ textarea:focus, input:focus {
     font-size: 90pt;
 }
 
-#add {
-    outline: none;
-    margin: auto;
-    text-align: center;
-    color: white;
-    border-radius: 50%;
-    font-size: 150pt;
-    background-color:   #3fad3f;;
-    position: fixed;
-    border: 10px solid #ffffff;
-    bottom: 1%;
-    left: 2%;
-    height:230px;
-    width: 230px;
-}
-
 h3 {
     font-size: 90pt;
     text-align: center;
@@ -427,6 +411,34 @@ select::-ms-expand {
     
     height:160px;
     width: 160px;
+}
+
+#add {
+    outline: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+    background-color:   #3fad3f;;
+    color: #ffffff;
+    font-size: 90pt;
+    font-weight: bolder;
+    
+    outline: none;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    padding: 5%;
+    border: 10px solid #ffffff;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    
+    
+    bottom: 1%;
+    left: 2%;
 }
 
 #letter::placeholder{
