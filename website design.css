@@ -43,12 +43,12 @@ body{
     border: 10px solid #ffffff;
     border-radius: 50px;
     background-color: #be2b9f;
-    }
+}
 
-::placeholder{
+#bits::placeholder{
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    color: #bdb3b3;
-    font-weight: lighter;
+    color: #ffffff;
+    font-size: 60pt;
 }
 
 #word {
@@ -70,7 +70,7 @@ textarea:focus, input:focus {
     color: #ffffff;
 }
 
-::placeholder{
+#word::placeholder{
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
     color: #ffffff;
     font-size: 90pt;
