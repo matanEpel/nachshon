@@ -52,7 +52,7 @@ body{
 #bits_label{
     margin: auto;
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-    color: #ecafda;
+    color: #e996d0;
     font-size: 60pt;
     left: 100%;
     text-align: center;
@@ -358,6 +358,27 @@ select::-ms-expand {
     background-color:   #3fad3f;;
     position: fixed;
     border: 10px solid #ffffff;
+    
+    display: none;
+}
+
+
+#playriddle1 {
+    outline: none;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 530px;
+    width: 530px;
+    border-radius: 50%;
+    top: 35%;
+    left: 23%;
+    margin-left: auto;
+    font-size: 160pt;
+    background-color:   #3fad3f;;
+    position: fixed;
+    border: 10px solid #ffffff;
+    display: none;
 }
 
 #play {
@@ -476,6 +497,24 @@ select::-ms-expand {
 }
 
 #stopriddle {
+    display: none;
+    outline: none;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 530px;
+    width: 530px;
+    border-radius: 50%;
+    top: 35%;
+    left: 23%;
+    margin-left: auto;
+    font-size: 160pt;
+    background-color:   #3fad3f;;
+    position: fixed;
+    border: 10px solid #ffffff;
+}
+
+#stopriddle1 {
     display: none;
     outline: none;
     margin: auto;

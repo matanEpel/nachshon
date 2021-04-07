@@ -6,6 +6,7 @@ default_binary = [1]
 default_encryption = [1]
 playing = false
 audio2 = new Audio('riddle.mp3')
+riddle2 =  new Audio('riddle2.mpeg')
 audio4_1_a = new Audio("400-1-a.wav")
 audio5_1_a = new Audio("500-1-a.wav")
 audio6_1_a = new Audio("600-1-a.wav")
@@ -96,8 +97,13 @@ function main() {
     $("#encryptiondict").hide()
     $("#sending").hide()
     $("#riddle").hide()
+    $("#riddle2").hide()
     $("#stopriddle").hide()
+    $("#playriddle").show()
+    $("#stopriddle1").hide()
+    $("#playriddle1").show()
     $("#stop").hide()
+    changescreen()
 
 }
 
@@ -107,13 +113,13 @@ function bits_from_location(loc){
         for(let i = 0; i < bindict[loc].length; i++){
             final_data.push(parseInt(bindict[loc][i]))
         }
-        return final_data
+        return final_data.reverse()
     } else {
         final_data = []
         for(let i = 0; i < defaultBicDict[loc].length; i++){
             final_data.push(parseInt(defaultBicDict[loc][i]))
         }
-        return final_data
+        return final_data.reverse()
     }
 }
 
@@ -402,6 +408,21 @@ function playAudioRiddle() {
     }
 }
 
+function playAudioRiddle2() {
+    if (playing){
+        $("#playriddle1").show()
+        $("#stopriddle1").hide()
+        riddle2.pause()
+        playing = false
+    }
+    else{
+        $("#stopriddle1").show()
+        $("#playriddle1").hide()
+        riddle2.play()
+        playing = true
+    }
+}
+
 function changescreen() {
     playing = false
     audio2.pause()
@@ -410,10 +431,13 @@ function changescreen() {
     $("#binarydict").hide()
     $("#encryptiondict").hide()
     $("#sending").hide()
+    $("#riddle2").hide()
     $("#riddle").hide()
     $(todisplay).show()
     $("#playriddle").show()
     $("#stopriddle").hide()
+    $("#playriddle1").show()
+    $("#stopriddle1").hide()
     $("#play").show()
     $("#stop").hide()
 }
